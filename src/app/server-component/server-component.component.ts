@@ -4,7 +4,7 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
   selector: 'app-server-component',
   templateUrl: './server-component.component.html',
   styleUrls: ['./server-component.component.css'],
-  encapsulation: ViewEncapsulation.Emulated
+  encapsulation: ViewEncapsulation.Emulated // None, Native
 })
 export class ServerComponentComponent implements OnInit {
 
