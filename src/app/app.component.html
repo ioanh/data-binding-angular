@@ -10,9 +10,12 @@
   <hr>
   <div class="row">
     <div class="col-xs-12">
+      <button class="btn btn-primary" (click)="onChangeFirst()">Make changes</button>
+      <button class="btn btn-danger" (click)="onDestroyed()">Destroy</button>
         <app-server-component 
         *ngFor="let serverElement of serverElements"
-        [ElementInfo] = "serverElement">
+        [ElementInfo] = "serverElement"
+        [name] = "serverElement.name">
         <p>
           <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.content }}</strong>
           <em *ngIf="serverElement.type === 'blueprint'">{{ serverElement.content }}</em>
