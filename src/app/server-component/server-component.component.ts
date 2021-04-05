@@ -24,7 +24,7 @@ export class ServerComponentComponent implements OnInit, OnChanges, DoCheck, Aft
 
   ngOnInit(): void {
     console.log('ngOnInit called!!!!')
-    console.log(`This is the oninit with ${this.paragraphen}`)
+    console.log(`This is the oninit with ${this.paragraphen.nativeElement.textContent}`)
   }
 
   ngDoCheck() {
@@ -34,7 +34,7 @@ export class ServerComponentComponent implements OnInit, OnChanges, DoCheck, Aft
   ngAfterContentInit(){
     console.log('ngAfterContentInit called!!!')
     console.log(`Heading is ${this.headingOne.nativeElement.textContent}`)
-    console.log(`This is the  content oninit with ${this.paragraphen}`)
+    console.log(`This is the  content oninit with ${this.paragraphen.nativeElement.textContent}`)
   }
 
   ngAfterContentChecked(){
